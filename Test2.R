@@ -5,6 +5,8 @@ library(AnnotationDbi)
 library(data.table)
 ##########################
 
+## this is a comment, hey keegan
+
 bplex <- read_tsv("Downloads/BioPlex_293T_Network_10K_Dec_2019 (1).tsv")
 
 edges.47 <- filter(bplex, `SymbolB` == "C6orf47")  %>% select(1, 2, 5, 6, 7, 8, 9)
